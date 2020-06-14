@@ -19,6 +19,7 @@ In the PowerShell Scripts folder you can find some examples of how you can use P
 
 * **Create_PowerBI_SP_Generic.ps1**: generic script that can be used to create a Service Principal in Azure
 * **PowerBI-DownloadFileFromWorkspace.ps1**: simple script that can be used to download a pbix file from Power BI Service given the Report Name, Workspace Name and a Target Location
+* **PowerBI-CreateWorkspaceAndAddADGroups.ps1**: power shell script that can be used in the pipeline PowerShell task to create workspaces with role based security
 
 ### C
 
