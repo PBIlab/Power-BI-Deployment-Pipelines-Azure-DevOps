@@ -1,4 +1,13 @@
-﻿##This Script is used to download the pbix from the Power BI Service given the Report Name, Workspace Name and that a Target Location is available
+﻿#############################################################################################
+#   PowerShell Modules Required
+### Microsoft.PowerShell.Utility
+### Microsoft.PowerShell.Management
+### MicrosoftPowerBIMgmt.Profile
+### MicrosoftPowerBIMgmt.Workspaces
+### MicrosoftPowerBIMgmt.Reports
+#############################################################################################
+
+##This Script is used to download the pbix from the Power BI Service given the Report Name, Workspace Name and that a Target Location is available
 
 #connect to the service
 Connect-PowerBIServiceAccount
