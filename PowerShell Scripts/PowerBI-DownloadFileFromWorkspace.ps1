@@ -52,7 +52,7 @@ if (Test-Path $fileToCheck -PathType leaf)
 {
     $fileDelete = (Read-Host "File already exists. Do you want to delete it and export again? (Y/N)").ToUpper()
     
-##if the file exists we remove the file and download the new version
+##if the file exists and we want remove the file and download a new version
     if($fileDelete -eq "Y") {
 
         Remove-Item $fileToCheck
@@ -62,13 +62,21 @@ if (Test-Path $fileToCheck -PathType leaf)
 
     }  
 
-##if the file doean't exist we download the new version   
+##if the file exists and we download the new version   
     else {
 
-        #Export pbix file with corresponding report id from corresponding workspace id to the defined output location
-        Export-PowerBIReport -Id $ReportId -OutFile $Outfile -WorkspaceId $WorkspaceId
+        write-host("Check the file $Outfile to ensure is the required version")
+
     } 
     
+}
+#the file doesn't exist
+else
+{
+
+    #Export pbix file with corresponding report id from corresponding workspace id to the defined output location
+    Export-PowerBIReport -Id $ReportId -OutFile $Outfile -WorkspaceId $WorkspaceId
+
 }
 
 #disconnect from the service

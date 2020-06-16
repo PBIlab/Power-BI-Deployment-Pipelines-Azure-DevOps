@@ -3,15 +3,10 @@ Sample code and demo material from our presentation Power BI CI/CD with Azure De
 
 ## Sections
 
-This repository contains four sections/folders:
-* A
+This repository contains three sections/folders:
 * PowerShell Scripts
-* C
+* Templates
 * Slide Deck
-
-### A
-
-In A folder you can find ...
 
 ### PowerShell Scripts
 
@@ -21,13 +16,24 @@ In the PowerShell Scripts folder you can find some examples of how you can use P
 * **PowerBI-DownloadFileFromWorkspace.ps1**: simple script that can be used to download a pbix file from Power BI Service given the Report Name, Workspace Name and a Target Location
 * **PowerBI-CreateWorkspaceAndAddADGroups.ps1**: power shell script that can be used in the pipeline PowerShell task to create workspaces with role based security
 
-### C
+### Templates
+
+In the templates folder you can find the csv template that can be used as an input for the PowerBI-CreateWorkspace pipeline.
 
 ### Slide Deck
 
 In the Slide Deck folder you can find the presentation file in a pdf format.
 
 ## Built With
+
+* [Microsoft Visual Studio Enterprise 2019 ](https://visualstudio.microsoft.com/vs/enterprise/)
+* [Windows PowerShell ISE(https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/exploring-the-windows-powershell-ise?view=powershell-7)
+* [Azure DevOps](https://azure.microsoft.com/en-ca/services/devops/)
+* [Azure](https://azure.microsoft.com/en-ca/)
+* [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
+* [Power BI Gateway](https://powerbi.microsoft.com/en-us/gateway/)
+* [Power BI Actions](https://marketplace.visualstudio.com/items?itemName=maikvandergaag.maikvandergaag-power-bi-actions)
+
 
 ## Authors
 
