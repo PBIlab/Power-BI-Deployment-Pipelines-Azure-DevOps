@@ -27,7 +27,7 @@ In the Slide Deck folder you can find the presentation file in a pdf format.
 ## Built With
 
 * [Microsoft Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/vs/enterprise/)
-* [Windows PowerShell ISE}(https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/exploring-the-windows-powershell-ise?view=powershell-7)
+* [Windows PowerShell ISE](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/exploring-the-windows-powershell-ise?view=powershell-7)
 * [Azure DevOps](https://azure.microsoft.com/en-ca/services/devops/)
 * [Azure](https://azure.microsoft.com/en-ca/)
 * [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
