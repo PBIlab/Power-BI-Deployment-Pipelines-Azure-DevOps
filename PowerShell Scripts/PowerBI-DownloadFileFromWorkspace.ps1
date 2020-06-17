@@ -62,10 +62,10 @@ if (Test-Path $fileToCheck -PathType leaf)
 
     }  
 
-##if the file exists and we don't want to download the new version; we just write a message and don't download from the service   
+##if the file exists and we don't want to download the new version; we just write a message and don't download it from the service   
     else {
 
-        write-host("Existing withtout downloading. Check the file $Outfile to ensure is the required version")
+        write-host("Exiting without downloading. Check the file $Outfile to ensure is the required version")
 
     } 
     
