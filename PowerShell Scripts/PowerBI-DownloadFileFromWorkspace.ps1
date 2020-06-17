@@ -52,7 +52,7 @@ if (Test-Path $fileToCheck -PathType leaf)
 {
     $fileDelete = (Read-Host "File already exists. Do you want to delete it and export again? (Y/N)").ToUpper()
     
-##if the file exists and we want remove the file and download a new version
+##if the file exists and we want to remove the file and download a new version
     if($fileDelete -eq "Y") {
 
         Remove-Item $fileToCheck
@@ -62,15 +62,15 @@ if (Test-Path $fileToCheck -PathType leaf)
 
     }  
 
-##if the file exists and we download the new version   
+##if the file exists and we don't want to download the new version; we just write a message and don't download it from the service   
     else {
 
-        write-host("Check the file $Outfile to ensure is the required version")
+        write-host("Exiting without downloading. Check the file $Outfile to ensure is the required version")
 
     } 
     
 }
-#the file doesn't exist
+#the file doesn't exist; we download it form the Service
 else
 {
 
@@ -79,5 +79,4 @@ else
 
 }
 
-#disconnect from the service
 Disconnect-PowerBIServiceAccount
